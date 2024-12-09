@@ -84,15 +84,40 @@
 					<div class="form-group">
 						<label for="Nom">
 							Nom
-						</label>
-						<input id="Nom" name="Nom" class="form-control" required />
-					</div>
-					<div class="form-group">
-						<label for="email">
-							Adresse email
-						</label>
-						<input id="email" name="email" class="form-control" type="email" required />
-					</div>
+						<style>
+    /* Appliquer un style global aux champs de formulaire */
+    .form-control {
+      height: 44px;  /* Augmenter la hauteur des champs de saisie pour respecter la taille minimale des zones tactiles */
+      font-size: 16px;  /* Augmenter la taille de la police pour une meilleure lisibilité */
+      padding: 10px;  /* Ajouter du padding pour un espace confortable autour du texte */
+      width: 100%;  /* Assurer que les champs de saisie prennent toute la largeur disponible */
+      box-sizing: border-box; /* Inclure le padding dans la largeur du champ */
+    }
+
+    /* Espacement entre les groupes de champs de formulaire */
+    .form-group {
+      margin-bottom: 20px;  /* Ajouter de l'espace entre chaque champ de saisie */
+    }
+
+    /* Style des labels pour assurer une bonne lisibilité */
+    label {
+      font-size: 14px;  /* Taille du texte pour les labels */
+      margin-bottom: 8px; /* Ajouter un peu d'espace sous le label */
+      display: block;  /* Assurer que le label occupe toute la largeur et se place au-dessus du champ */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form-group">
+    <label for="Nom">Nom</label>
+    <input id="Nom" name="Nom" class="form-control" required />
+  </div>
+
+  <div class="form-group">
+    <label for="email">Adresse email</label>
+    <input id="email" name="email" class="form-control" type="email" required />
+  </div>
 					<div class="form-group">
 						<label for="comment">
 							Comment nous avez-vous connu ?
